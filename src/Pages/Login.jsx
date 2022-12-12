@@ -22,7 +22,7 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">What's App Login</span>
+        <span className="logo">Welcome to Arrow Chat App</span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
