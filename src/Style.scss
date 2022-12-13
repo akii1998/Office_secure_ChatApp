@@ -13,33 +13,48 @@
       @content;
     }
   }
+
+::-webkit-scrollbar{
+    display: none;
+}
+// *{
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
   
   .formContainer {
-    background-color: #a7bcff;
+    // background-color: #a7bcff;
+    // background: url('./img//bg_login4.jpg') no-repeat center ;
+    background: url('./img//3k1i_jozh_200318.jpg') no-repeat center center/cover;
+    // object-fit:contain;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
   
     .formWrapper {
-      background-color: white;
+      background-color: rgb(245, 245, 139);
       padding: 20px 60px;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       gap: 10px;
       align-items: center;
+      opacity: 0.95;
   
       .logo {
-        color: #5d5b8d;
+        color: #0f0e17;
         font-weight: bold;
         font-size: 24px;
   
       }
   
       .title {
-        color: #5d5b8d;
-        font-size: 12px;
+        color: #0f0e17;
+        font-size: 15px;
+        font-weight: bold;
       }
   
       form {
@@ -58,31 +73,39 @@
         }
   
         button {
-          background-color: #7b96ec;
+          background-color: #1827f8;
           color: white;
           padding: 10px;
           font-weight: bold;
           border: none;
           cursor: pointer;
         }
+        button:hover{
+          background-color: #0f0e17;
+        }
   
         label {
           display: flex;
           align-items: center;
           gap: 10px;
-          color: #8da4f1;
+          color: #e81111;
           font-size: 12px;
           cursor: pointer;
+          font-weight: bold;
   
           img {
             width: 32px;
+            color:red;
           }
         }
       }
       p {
-        color: #5d5b8d;
-        font-size: 12px;
+        color: #0f0e17;
+        font-size: 15px;
         margin-top: 10px;
+        a{
+         font-weight: bold; 
+        }
       }
     }
   }
@@ -109,6 +132,12 @@
         flex: 1;
         background-color: #3e3c61;
         position: relative;
+        overflow: scroll;
+       
+    
+        // .chats{
+        //   overflow: scroll;
+        // }
   
         .navbar {
           display: flex;
@@ -118,6 +147,7 @@
           padding: 10px;
           justify-content: space-between;
           color: #ddddf7;
+          // position: fixed;
   
           .logo {
             font-weight: bold;
@@ -150,6 +180,7 @@
               }
             }
           }
+        
         }
         .search {
           border-bottom: 1px solid gray;
@@ -169,7 +200,6 @@
             }
           }
         }
-  
         .userChat {
           padding: 10px;
           display: flex;
@@ -200,6 +230,7 @@
             }
           }
         }
+      
       }
       .chat {
         flex: 2;
