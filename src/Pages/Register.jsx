@@ -62,7 +62,7 @@ const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Arrow Chat</span>
+        <span className="logo"><span style={{color: "red" ,fontSize:"35px"}}>C</span>hatNova</span>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
           <input required type="text" placeholder="display name" />
